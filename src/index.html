@@ -1,29 +1,100 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Hello Rigo with Vanilla.js</title>
-    <link
-      rel="stylesheet"
-      href="https://use.fontawesome.com/releases/v5.2.0/css/all.css"
-      integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
-      crossorigin="anonymous"
-    />
-    <link rel="shortcut icon" href="./4geeks.ico" />
-  </head>
-  <body>
-    <div class="container-fluid text-center">
-      <h1 class="mt-5">Hello Rigo!</h1>
-      <img src="./rigo-baby.jpg" />
-      <p class="alert alert-warning mt-4">
-        If this text is <b>not</b> centered and <b>yellow</b>, you probably have
-        an error
-      </p>
-      <div class="fixed-bottom p-4">
-        Made with ❤️ by
-        <a href="https://www.4geeksacademy.com">4Geeks Academy</a>
-      </div>
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Bootstrap demo</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="card center w-75 mt-5 position-absolute top-0 start-50 translate-middle-x border border-1">
+        <div class="card-header justify-content-start">
+            <h4>Payment form example</h4>
+        </div>
+        <div class="card-body">
+            <div class="card text-start">
+                    <div class="bg-danger p-0 text-dark bg-opacity-10"> <p class="text-danger m-1">Some fields are missing</p></div>
+              </div>
+            <form class="row g-3 text-start">
+                <div class="col-md-5 mt-4">
+                    <label for="formGroupExampleInput" class="form-label"> Card # </label>
+                     <input type="text" class="form-control" id="formGroupExampleInput" placeholder="XXXXXXXXXXXXX">
+                    </div>
+                    
+                <div class="col-md-3 mt-4">
+                    <label for="formGroupExampleInput" class="form-label"> CVC # </label>
+                     <input type="text" class="form-control" id="formGroupExampleInput" placeholder="0000">
+                </div>
+
+                <div class="col-md-4 mt-4">
+                    <i class="fa-solid fa-dollar-sign"></i>
+                    <label for="inputAddress" class="form-label">Amount</label>
+                    <input type="text" class="form-control" id="inputAddress" placeholder="Amount">
+                </div>
+
+                <div class="col-6">
+                    <label for="inputAddress2" class="form-label">First Name</label>
+                    <input type="text" class="form-control" id="inputAddress2" placeholder="">
+                </div>
+
+                <div class="col-6">
+                    <label for="inputAddress2" class="form-label">Last Name</label>
+                    <input type="text" class="form-control" id="inputAddress2" placeholder="">
+                </div>
+
+                <div class="col-md-6">
+                    <label for="inputCity" class="form-label">City</label>
+                    <input type="text" class="form-control" id="inputCity">
+                </div>
+
+                <div class="col-md-4">
+                    <label for="inputState" class="form-label">State</label>
+                    <select id="inputState" class="form-select">
+                        <option selected>Pick a state</option>
+                        <option>...</option>
+                    </select>
+                </div>
+
+                <div class="col-md-2">
+                    <label for="inputZip" class="form-label">Postal Code</label>
+                    <input type="text" class="form-control" id="inputZip">
+                </div>
+
+                <div class="col-md-6 p-0">
+                    <div class="form-check">
+                        <label class="form-check-label text-start" for="gridCheck">
+                        We accept:
+                        </label>
+                        <div class="métodosdepago">
+                        <img src="métodos de pago.JPG">
+                    </div>
+                    </div>
+                </div>
+
+                <div class="col-6 mb-3">
+                    <label for="exampleFormControlTextarea1" class="form-label">Message</label>
+                    <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                    <div class="feedback text-black-50">
+                        Add any notes here.
+                    </div>
+                  </div>
+        </div>
+        <div class="card-footer">
+            <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+                <button type="submit" class="btn btn-secondary btn me-md-2">Cancel</button>
+                <button type="submit" class="btn btn-primary me-md-2">Send</button>
+            </div>
+        </div>
     </div>
-  </body>
+</div>
+    </form>
+</body>
+
 </html>
