@@ -106,64 +106,54 @@ form.addEventListener("submit", function(event) {
 
 if (!cardnumber.test(form.cardnumber.value)) {
   form.cardnumber.classList.add("is-invalid");
-  (form.cardnumber.style.background = "alert-danger"), "opacity-50";
 } else {
   form.cardnumber.classList.remove("is-invalid");
 }
 
 if (!cvc.test(form.cvc.value)) {
   form.cvc.classList.add("is-invalid");
-  (form.cvc.style.background = "alert-danger"), "opacity-50";
 } else {
   form.cvc.classList.remove("is-invalid");
 }
 
 if (!amount.test(form.amount.value)) {
   form.amount.classList.add("is-invalid");
-  (form.amount.style.background = "alert-danger"), "opacity-50";
 } else {
   form.amount.classList.remove("is-invalid");
 }
 
 if (!firstname.test(form.firstname.value)) {
   form.firstname.classList.add("is-invalid");
-  (form.firstname.style.background = "alert-danger"), "opacity-50";
 } else {
   form.firstname.classList.remove("is-invalid");
 }
 
 if (!lastname.test(form.lastname.value)) {
   form.lastname.classList.add("is-invalid");
-  (form.lastname.style.background = "alert-danger"), "opacity-50";
 } else {
   form.lastname.classList.remove("is-invalid");
 }
 
 if (!inputCity.test(form.inputCity.value)) {
   form.inputCity.classList.add("is-invalid");
-  (form.inputCity.style.background = "alert-danger"), "opacity-50";
 } else {
   form.inputCity.classList.remove("is-invalid");
 }
 
 if (!inputZip.test(form.inputZip.value)) {
   form.inputZip.classList.add("is-invalid");
-  (form.inputZip.style.background = "alert-danger"), "opacity-50";
 } else {
   form.inputZip.classList.remove("is-invalid");
 }
 
 if (!message.test(form.message.value)) {
   form.message.classList.add("is-invalid");
-  (form.message.style.background = "alert-danger"), "opacity-50";
 } else {
   form.message.classList.remove("is-invalid");
 }
 
-let x = document.querySelector("#inputState");
-if (x.value == "") {
+if (!inputState.test(form.inputState.value)) {
   form.inputState.classList.add("is-invalid");
-  (form.inputState.style.background = "alert-danger"), "opacity-50";
 } else {
   form.inputState.classList.remove("is-invalid");
 }
