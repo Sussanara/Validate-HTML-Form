@@ -1,4 +1,4 @@
-/* eslint-disable */
+/* eslint-disable hola */
 import "./index.html";
 import "./style.css";
 
